@@ -8,7 +8,7 @@ We examine recently proposed mathematical LVLMs, including G-LLaVA, MathLLaVA, M
 ```
 sh gllava.sh
 ```
-To modify the dataset used, simply adjust `--dataset_use` to the corresponding dataset in `llava/config/`. When employing multiple image encoders, modify `--vision_tower` to specify their combination:
+To modify the dataset used, simply adjust `--dataset_use` to the corresponding dataset in `llava/config/`. Image-shuffled or image-deleted versions of `geo170k` (training data of G-LLaVA) can be found in [here](https://huggingface.co/datasets/yfliu/shuffled_gllava). When employing multiple image encoders, modify `--vision_tower` to specify their combination:
 
 - **Dot-separated** names (e.g., siglip.dino) indicate concatenation of hidden-layer representations.
 
